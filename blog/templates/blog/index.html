@@ -1,0 +1,7 @@
+<a href='{% url "team:MyTeam" %}'>My Team</a>
+	{% for detail in home_detail %}
+		<li>{{detail}}</li>
+		<li>{{detail.info_1}}</li>
+		<li>{{detail.info_2}}</li>
+		<img src="{{detail.background_image.url}}" alt="">
+	{% endfor %}

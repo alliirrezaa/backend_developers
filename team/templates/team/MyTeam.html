@@ -1,0 +1,10 @@
+<a href='{% url 'blog:index'%}'>YOUEM</a>
+
+{%for member in members %}
+	<li>{{ member }}</li>
+	<li>{{ member.profession }}</li>
+	<li>{{ member.description }}</li>
+	<li>{{ member.instagram_link }}</li>
+	<li>{{ member.telegram_link }}</li>
+	<img src="{{member.profile_image.url}}" alt="">
+{% endfor %}
